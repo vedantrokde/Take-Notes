@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+	margin: 0;
+	font-family: "Quicksand";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.MuiDrawer-paper {
+	width: 240px;
+}
+
+.active {
+	background-color: #f4f4f4 !important;
+}
+
+.main {
+	background: #f9f9f9;
+	width: 100%;
+	padding: 24px;
+  min-height: max-content;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { 
+  margin-bottom: 30px;
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+  .main {
+    margin-top: 48px;
+    min-height: calc(100vh - 48px);
+  }
+}
+
+@media (min-width: 600px) {
+  .main {
+    margin-top: 64px;
+    min-height: calc(100vh - 112px);
+	}
+}
